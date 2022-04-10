@@ -97,6 +97,15 @@ header a {
   width: 90%
 }
 
+.create-note-area {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.fa-solid, .fa-circle-plus {
+  margin-bottom: 15px;
+}
+
 article {
   margin-bottom: var(--lrg-txt);
 }
@@ -122,6 +131,8 @@ textarea {
   outline: none;
   resize: none;
   overflow: auto;
+  width: 350px;
+  height: 150px;
 }
 
 footer {
