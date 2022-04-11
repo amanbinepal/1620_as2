@@ -102,9 +102,6 @@ header a {
   flex-direction: column-reverse;
 }
 
-.cancel {
-  color:aqua;
-}
 
 article {
   margin-bottom: var(--lrg-txt);
