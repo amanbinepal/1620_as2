@@ -102,6 +102,10 @@ header a {
   flex-direction: column-reverse;
 }
 
+.read-note-area {
+  display: flex;
+  flex-direction: column-reverse;
+}
 
 article {
   margin-bottom: var(--lrg-txt);
