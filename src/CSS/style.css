@@ -97,13 +97,13 @@ header a {
   width: 90%
 }
 
-.create-note-area {
+.write-note-area {
   display: flex;
   flex-direction: column-reverse;
 }
 
-.fa-solid, .fa-circle-plus {
-  margin-bottom: 15px;
+.cancel {
+  color:aqua;
 }
 
 article {
@@ -114,6 +114,13 @@ article {
   font-family: 'Libre Baskerville', serif;
   color: var(--text);
   font-size: 1.6rem;
+}
+
+button {
+  width: 100px;
+  height: 20px;
+  margin-bottom: 3px;
+
 }
 
 i {
@@ -133,6 +140,7 @@ textarea {
   overflow: auto;
   width: 350px;
   height: 150px;
+  margin-bottom: 5px;
 }
 
 footer {
