@@ -6,30 +6,32 @@ const notes = [
   }
 ]
 
-
-
-
 const createButton = document.querySelector(".fa-solid.fa-circle-plus")
 const textArea = document.querySelector(".write-note-area")
 
 function createNote() {
+  if (noteChecker()) {
+    textArea.insertAdjacentHTML("afterbegin", "<textarea>Notes</textarea>")
+  
 
-  textArea.insertAdjacentHTML("afterbegin", "<textarea>Notes</textarea>")
-
-  const saveBtn = `<button class="save">Save</button>`
-  textArea.insertAdjacentHTML("afterbegin", saveBtn)
-  const saveButton = document.querySelector(".save")
-  saveButton.addEventListener("click", saveNote)
+    const saveBtn = `<button class="save">Save</button>`
+    textArea.insertAdjacentHTML("afterbegin", saveBtn)
+    const saveButton = document.querySelector(".save")
+    saveButton.addEventListener("click", saveNote)
 
 
-  const cancelBtn = `<button class="cancel">Cancel</button>`
-  textArea.insertAdjacentHTML("afterbegin", cancelBtn)
-  const cancelButton = document.querySelector(".cancel")
-  cancelButton.addEventListener("click", cancelNote)
- 
-    
+    const cancelBtn = `<button class="cancel">Cancel</button>`
+    textArea.insertAdjacentHTML("afterbegin", cancelBtn)
+    const cancelButton = document.querySelector(".cancel")
+    cancelButton.addEventListener("click", cancelNote)
+
+  }
+  
 }  
 
+function noteChecker() {
+  return !(document.querySelector("textarea"))
+}
 function cancelNote() {
   while (textArea.hasChildNodes()) {
     textArea.firstChild.remove()
@@ -55,6 +57,6 @@ function saveNote() {
 
 
 
-createButton.addEventListener("click", createNote, {once: true})
+createButton.addEventListener("click", createNote)
 
 
