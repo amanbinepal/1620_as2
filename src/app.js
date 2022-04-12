@@ -80,14 +80,9 @@ function closeRead() {
   }
 }
 
-/*function readChecker() {
-  return !document.querySelector("h1, p")
 
-}*/
-  
 
 createButton.addEventListener("click", createNote)
-
 readButton.addEventListener("click", readNote)
 
 
