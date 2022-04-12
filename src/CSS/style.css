@@ -118,11 +118,41 @@ article {
 }
 
 button {
-  width: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
   height: 20px;
-  margin-bottom: 3px;
-
+  margin: 3px;
+  text-decoration: none;
+  background-color: #393552;
+  color: #f2e9e1;
+  font-family: monospace;
+  font-size: 17px;
+  text-align: center;
 }
+
+.notes-list {
+  margin-top: 20px;
+}
+
+li {
+  font-size: 20px;
+  font-family: monospace;
+  color: #191724;
+  
+}
+
+.close {
+  margin-top: 10px;
+}
+
+h1 {
+  margin-top: 5px;
+  font-size: 14px;
+}
+
+
 
 i {
   font-size: 3rem;
